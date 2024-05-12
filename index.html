@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clima en tu ubicación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body onload="onLoad()">
+    <div id="container">
+        <!--Estos div con id se utilizaran para hacer llamados a la api-->
+        <div class="block">
+            <div id="location"></div>
+            <div id="date"></div>
+            <img src="images/termometro.png" class="fotoTerm">
+        </div>
+
+        <div class="block">
+            <div class="information-container">
+                Temperatura: 
+                <div id="temperature" class="info"></div>
+            </div>
+            <div class="information-container">
+                Pression:
+                <div id="pressure" class="info"></div>
+            </div>
+            <div class="information-container">
+                Descripción: 
+                <div id="description" class="info"></div>
+            </div>
+            <div class="information-container">
+                Humedad:
+                <div id="humidity" class="info"></div>
+            </div>
+        </div>
+    </div>
+    <!--este div de abajo corresponde al spinner de CSS-->
+    <div id="loader" class="loader">Loading...</div>
+    <!--al spinner se le coloca id porque lo llamaremos en JS-->
+    <script src="index.js"></script>
+</body>
+</html>
